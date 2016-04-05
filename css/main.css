@@ -1,0 +1,255 @@
+/***
+* RHD Dev: Compiled at 1:55:22 PM on 05-04-2016
+***/
+
+.unselectable {
+  -webkit-user-select: none; /* Chrome/Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+  -o-user-select: none;
+  user-select: none;
+}
+.invisible {
+  position: absolute;
+  visibility: hidden;
+  margin: 0;
+}
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.visuallyhidden.focusableactive,
+.visuallyhidden.focusablefocus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+.clearfix:before,
+#page:before,
+.clearfix:after,
+#page:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after,
+#page:after {
+  clear: both;
+}
+* {
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@media print {
+  *,
+  *before,
+  *after {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  avisited {
+    text-decoration: underline;
+  }
+  a[href]after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]after {
+    content: " (" attr(title) ")";
+  }
+  a[href^="#"]after,
+  a[href^="javascript"]after {
+    content: "";
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  img {
+    max-width: 100% !important;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+img.alignleft {
+  float: left;
+}
+img.alignright {
+  float: right;
+}
+img.aligncenter {
+  margin: 0 auto;
+  display: block;
+}
+html,
+body {
+  color: #000;
+  background: #fff;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+#page {
+  position: relative;
+}
+#primary {
+  width: 85%;
+  max-width: 75rem;
+  position: relative;
+  margin: 0 auto 0 auto;
+}
+#content {
+  width: 100%;
+  position: relative;
+}
+#content p {
+  margin: 1em 0;
+}
+#content > p {
+  font-size: 1.1em;
+}
+#content #site-title {
+  font-size: 3em;
+  font-size: 12vw;
+  font-weight: 300;
+  text-align: center;
+}
+#image {
+  width: 95%;
+  max-width: 75rem;
+  position: relative;
+  margin: 0 auto 0 auto;
+}
+#image img {
+  width: 100%;
+  height: auto;
+}
+.colophon {
+  font-size: 0.9em;
+  padding-top: 0.75em;
+  border-top: 1px solid #999;
+}
+.colophon .site-info {
+  text-align: center;
+}
+#footer-mobile {
+  width: 80%;
+  max-width: 75rem;
+  position: relative;
+  margin: 0 auto 1em auto;
+}
+#footer-desktop {
+  display: none;
+}
+/* ==========================================================================
+	Ghost Buttons
+   ========================================================================== */
+.ghost-button {
+  width: auto;
+  max-width: 100%;
+  text-align: center;
+  margin: 1em auto;
+}
+.ghost-button a {
+  padding: 0.4em 0.8em;
+  color: #000;
+  text-decoration: none;
+  background-color: #fff;
+  border: 3px solid #000;
+  border-radius: 0.1em;
+  display: inline-block;
+  transition: all 0.2s;
+  font-weight: 700;
+}
+.ghost-button a:hover,
+.ghost-button a:active {
+  background-color: #000;
+  color: #fff;
+}
+.ghost-button:last-of-type {
+  margin-bottom: 0;
+}
+/* ==========================================================================
+	Media Queries
+   ========================================================================== */
+@media screen and (min-width: 40em) {
+  html,
+  body,
+  #page,
+  #primary {
+    height: 100%;
+  }
+  body {
+    background: url("../img/sklarandbeguelin.jpg") no-repeat 10% bottom fixed;
+    background-size: auto 100%;
+  }
+  #page {
+    overflow-y: auto;
+  }
+  #primary {
+    background: transparent;
+  }
+  #content {
+    width: 50%;
+    float: right;
+    padding: 1em;
+    background: rgba(255,255,255,0.5);
+    border-radius: 0.1em;
+  }
+  #content > p {
+    text-align: justify;
+  }
+  #content #site-title {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+  }
+  #links {
+    margin: 2em auto;
+  }
+  #image {
+    display: none;
+  }
+  #image img {
+    width: auto;
+    height: 100%;
+  }
+  #footer-mobile {
+    display: none;
+  }
+  #footer-desktop {
+    display: block;
+  }
+}
