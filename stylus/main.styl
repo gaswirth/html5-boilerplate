@@ -1,0 +1,147 @@
+@require "_global.styl"
+@require "_helpers.styl"
+
+
+html
+	color $color1
+	background $color2
+	font-family $ff-body
+	font-size 16px
+	font-weight 300
+
+
+body
+	@extends html
+
+
+#page
+	position relative
+
+
+#primary
+	-wrapper()
+
+
+#content
+	width 100%
+	position relative
+
+	p
+		margin 1em 0
+
+	& > p
+		font-size 1.1em
+
+	#site-title
+		font-size 3em //fallback
+		font-size 12vw
+		font-weight 300
+		text-align center
+
+
+#image
+	-wrapper(0, 0, 95%)
+
+	img
+		width 100%
+		height auto
+
+
+.colophon
+	font-size 0.9em
+	padding-top 0.75em
+	border-top 1px solid $color3
+
+	.site-info
+		text-align center
+
+
+#footer-mobile
+	-wrapper(0, 1em, 80%)
+
+
+#footer-desktop
+	display none
+
+
+/* ==========================================================================
+	Ghost Buttons
+   ========================================================================== */
+
+.ghost-button
+	width auto
+	max-width 100%
+	text-align center
+	margin 1em auto
+
+	a
+		padding 0.4em .8em
+		color $color1
+		text-decoration none
+		background-color $color2
+		border 3px solid @color
+		border-radius 0.1em
+		display inline-block
+		transition all 0.2s
+		font-weight 700
+
+		&:hover
+		&:active
+			background-color $color1
+			color $color2
+
+	&:last-of-type
+		margin-bottom 0
+
+
+/* ==========================================================================
+	Media Queries
+   ========================================================================== */
+
+@media screen and (min-width 40em)
+	html
+	body
+	#page
+	#primary
+		height 100%
+
+	body
+		background url(../img/sklarandbeguelin.jpg) no-repeat 10% bottom fixed
+		background-size auto 100%
+
+	#page
+		-clearfix()
+		overflow-y auto
+
+	#primary
+		background transparent
+
+	#content
+		width 50%
+		float right
+		padding 1em
+		background $color2_trans
+		border-radius 0.1em
+
+		& > p
+			text-align justify
+
+		#site-title
+			font-size 3em
+			margin-bottom 0.5em
+
+	#links
+		margin 2em auto
+
+	#image
+		display none
+
+		img
+			width auto
+			height 100%
+
+	#footer-mobile
+		display none
+
+	#footer-desktop
+		display block
