@@ -1,3 +1,4 @@
+dev
 <!doctype html>
 <html class="no-js" lang="">
     <head>
@@ -31,7 +32,7 @@
 
 					<div id="links">
 						<div class="ghost-button"><a href="//matthewsklar.com">Visit Matthew Sklar&rsquo;s Website</a></div>
-						<div class="ghost-button"><a href="//dev.roundhouse-designs.com/chadbeguelin">Visit Chad Beguelin&rsquo;s Website</a></div>
+						<div class="ghost-button"><a href="//chadbeguelin.com">Visit Chad Beguelin&rsquo;s Website</a></div>
 					</div>
 
 					<footer id="footer-desktop" class="colophon">
